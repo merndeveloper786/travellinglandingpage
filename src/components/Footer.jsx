@@ -20,7 +20,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-1 justify-between max-w-md">
+          <div className="flex flex-1 justify-between max-w-md mx-auto text-center md:text-left md:mx-0">
             {Object.entries(footerLinks).map(([section, links]) => (
               <div key={section} className="space-y-3">
                 <h3 className="text-sm md:text-base font-semibold text-[#080809]">
@@ -40,8 +40,8 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex flex-col items-center md:items-end gap-4">
-            <div className="flex items-center gap-3">
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center gap-3 justify-center">
               <button className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md text-[#5E6282]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +78,11 @@ const Footer = () => {
               </button>
             </div>
 
-              <div className="text-center md:text-right space-y-2">
+              <div className="text-center space-y-2">
                 <p className="text-xs md:text-sm text-[#5E6282]">
                   Discover our app
                 </p>
-                <div className="flex items-center gap-3 justify-center md:justify-end">
+                <div className="flex items-center gap-3 justify-center">
                   <button className="flex items-center gap-1 rounded-xl bg-black px-3 py-1.5 text-[9px] text-white shadow-sm">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
